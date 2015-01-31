@@ -1,0 +1,19 @@
+{
+     "master": {
+       "table": "A",
+       "column": "B"
+     },
+     "details": [
+        {
+            "table": "C",
+            "column": "D"
+        },
+        {
+            "table": "E"
+        },
+        {
+            "table": "E",
+            "column": "D"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+  "masterDetailRefs": [
+    {
+      "master": {
+        "table": "CI_PER_K",
+        "column": "PER_ID"
+      },
+      "details": [
+        {"table": "CI_PER"}
+      ]
+    },
+    {
+      "master": {
+        "table": "CI_PER",
+        "column": "PER_ID"
+      },
+      "details": [
+        {"table": "CI_PER_ID"},
+        {"table": "CI_PER_NAME"},
+        {"table": "CI_PER_CHAR"},
+        {
+          "table": "CI_PER_PER",
+          "column": "PER_ID1"
+        },
+        {
+          "table": "CI_PER_PER",
+          "column": "PER_ID2"
+        }
+      ]
+    },
+    {
+      "master": {
+        "table": "CI_ACCT_K",
+        "column": "ACCT_ID"
+      },
+      "details": [
+        {"table": "CI_ACCT"}
+      ]
+    },
+    {
+      "master": {
+        "table": "CI_ACCT",
+        "column": "ACCT_ID"
+      },
+      "details": [
+        {"table": "CI_ACCT_CHAR"},
+        {"table": "CI_ACCT_PER"}
+      ]
+    }
+  ]
+}
